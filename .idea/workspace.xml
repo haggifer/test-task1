@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="71d39d3a-41e1-4a1a-a906-02dfacbbb339" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/common/CenteredLoader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/common/CenteredLoader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/layout/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/layout/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/settings/UserSettings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/settings/UserSettings.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/TaskDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/TaskDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/TasksItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/TasksItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/TasksPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/TasksPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/TasksPageHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/TasksPageHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/modals/AddTask.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/modals/AddTask.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/modals/AddTaskList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/modals/AddTaskList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/modals/DeleteTask.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/modals/DeleteTask.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/modals/DeleteTaskList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/modals/DeleteTaskList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/modals/EditTaskList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/private/tasks/modals/EditTaskList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/public/ForgotPassword.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/public/ForgotPassword.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/public/GetStarted.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/public/GetStarted.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/public/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/public/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/public/LoginWrapper.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/public/SignUp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/src/components/pages/public/SignUp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/.idea/material-dashboard.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/jest.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/api/api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/bg-profile.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/bg-reset-cover.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/bg-sign-in-basic.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/bg-sign-up-cover.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/bruce-mars.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/home-decor-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/home-decor-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/home-decor-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/home-decor-4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/ivana-square.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/kal-visuals-square.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/logo-ct-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/logo-ct.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/marie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/team-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/team-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/team-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/team-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/images/team-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/scss/common.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/scss/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/scss/modules/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/scss/normalize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/scss/overwrites/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/scss/service/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/scss/service/mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/assets/scss/service/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/components/common/PageLoader.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/components/layout/PageLayout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/components/pages/private/home/Home.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/components/pages/public/auth/Auth.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/components/pages/public/auth/SignInForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/components/pages/public/auth/SignUpForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/components/pages/service/NotFound.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/redux/features/alert/alertSlice.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/redux/features/auth/authSlice.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/redux/features/auth/authThunks.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/redux/hooks.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/redux/selectors/alert.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/redux/selectors/auth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/redux/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/routing/ProtectedRoute.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/routing/Routes.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/routing/routes/privateRoutes.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/routing/routes/publicRoutes.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/routing/routes/serviceRoutes.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/typescript/api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/typescript/entities.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/typescript/states.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/utils/configs/navConfig.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/utils/configs/themeConfig.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/utils/helpers/globalStyles.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/utils/helpers/localStorage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/utils/hooks/useEffectOnce.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/src/utils/staticVariables.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material-dashboard/tsconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="D:\xampp\php\php.exe" />
+  <component name="ProjectId" id="2VO1dGlFgZp4gRxkBAzmy7Dt54R" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/private/work/notes.txt",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
+    "ts.external.directory.path": "C:\\private\\projects\\react\\unfinished\\pokemon-app\\node_modules\\typescript\\lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\components\common\DataTable" />
+      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\pages\public\PokemonList\PokemonListTable" />
+      <recent name="C:\private\projects\react\unfinished\pokemon-app" />
+      <recent name="C:\private\projects\react\unfinished\my-app\src\pages\service\NotFound" />
+      <recent name="C:\private\projects\react\unfinished\my-app\src\components\layout\PageLayout" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\assets\scss" />
+      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\assets\scss\global" />
+      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\components\common\PageLoader" />
+      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\components\common\DataTable" />
+      <recent name="C:\private\projects\react\unfinished\my-app\src\components\layout\PageLayout" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71d39d3a-41e1-4a1a-a906-02dfacbbb339" name="Changes" comment="" />
+      <created>1694692397983</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694692397983</updated>
+      <workItem from="1694692399069" duration="14878000" />
+      <workItem from="1694720356726" duration="22000" />
+      <workItem from="1694720387706" duration="37294000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

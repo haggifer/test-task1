@@ -1,0 +1,38 @@
+@value globalValues: "../../../assets/scss/globalValues.module.scss";
+
+@value accentColor, headerHeight, maxContentWidth from globalValues;
+
+.header_wrapper {
+  display: flex;
+  justify-content: center;
+  background: accentColor;
+}
+
+.header {
+  width: 100%;
+  max-width: maxContentWidth;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_content {
+  display: flex;
+  align-items: flex-end;
+  max-width: 1000px;
+  height: headerHeight;
+  padding: 15px 20px;
+}
+
+.header_content_xs {
+  justify-content: center;
+}
+
+.logo_wrapper {
+  align-self: stretch;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

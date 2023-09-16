@@ -1,0 +1,64 @@
+@value globalValues: "../../../assets/scss/globalValues.module.scss";
+
+@value accentColor from globalValues;
+
+.filters {
+  display: flex;
+  margin-bottom: 20px;
+
+  > *:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.search {
+
+}
+
+.list {
+  display: grid;
+  gap: 15px;
+}
+
+.list_xs {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.list_sm {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.list_md {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.list_lg {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.list_item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border: 2px solid accentColor;
+  border-radius: 10px;
+  padding: 10px;
+  background: #E1E0FF;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background: #D8D7FF;
+  }
+}
+
+.list_item_image {
+  height: 100px;
+  object-fit: contain;
+}
+
+.list_item_name {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: accentColor;
+}

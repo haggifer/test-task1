@@ -1,0 +1,15 @@
+@value globalValues: "../../../assets/scss/globalValues.module.scss";
+
+@value headerHeight, maxContentWidth from globalValues;
+
+.content_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: maxContentWidth;
+  min-height: calc(100vh - headerHeight);
+  padding: 15px 20px;
+}
