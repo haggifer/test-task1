@@ -1,20 +1,17 @@
-export const getURLParamsObject = (url: string): Record<string, string> => {
+import { IPokemonListParams } from "../../typescript/entities";
+
+export const getURLParamsObject = (url: string): IPokemonListParams => {
   const searchParams = new URLSearchParams(url);
 
-  const paramsObject: Record<string, string> = {};
+  const paramsObject: Record<string, string | number> = {};
 
   for (const [key, value] of searchParams) {
-    paramsObject[key] = value;
+    if (key === 'limit' || key === 'offset') {
+      paramsObject[key] = Number(value);
+    } else {
+      paramsObject[key] = value;
+    }
   }
 
-  return paramsObject
-}
-
-export const getURLParamsInstance = (obj: Record<string, unknown>): URLSearchParams => {
-  return new URLSearchParams(
-    Object.fromEntries(
-      Object.entries(obj)
-        .map(entry => [entry[0], String(entry[1])])
-    )
-  )
+  return paramsObject as IPokemonListParams
 }

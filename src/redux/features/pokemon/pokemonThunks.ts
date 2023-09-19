@@ -1,53 +1,96 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { IPokemonListParams } from "../../../typescript/api";
+import {
+  IPokemon,
+  IPokemonForm,
+  IPokemonList,
+  IPokemonListParams,
+  IPokemonType,
+  NamedAPIResource,
+  NamedAPIResourceList
+} from "../../../typescript/entities";
 import { apiProvider } from "../../../api/api";
-import { IPokemonForm, IPokemonList, NamedAPIResourceList } from "../../../typescript/entities";
-import _ from 'lodash'
+import { RootState } from "../../store";
 
 export const defaultListLength = 12;
 
 export const getPokemonList = createAsyncThunk<IPokemonList, IPokemonListParams>(
   'pokemon/getList',
-  async (params, { rejectWithValue }) => {
+  async (params, { rejectWithValue, dispatch, getState }) => {
     try {
-      let responseData: NamedAPIResourceList;
+      await dispatch(getPokemonTypes())
 
-      if (!params.name) {
-        const response = await apiProvider.request<NamedAPIResourceList>({
-          method: 'get',
-          url: `/pokemon`,
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          params: _.omit(params),
-        })
+      let count = 0;
+      let pokemonAPIResourceResults: NamedAPIResource[] = [];
 
-        responseData = response.data
+      if (params.type) {
+        console.log(1)
+        const state = getState() as RootState
+        const targetType = (state.pokemon.types as IPokemonType[]).find(type => type.name === params.type)
+
+        if (!targetType) {
+          pokemonAPIResourceResults = []
+        } else {
+          pokemonAPIResourceResults = targetType.pokemon.map(pokemon => pokemon.pokemon)
+
+          if (params.search) {
+            const regex = new RegExp(params.search, "gi");
+
+            pokemonAPIResourceResults = pokemonAPIResourceResults.filter(result => result.name.match(regex))
+          }
+
+          count = pokemonAPIResourceResults.length
+
+          pokemonAPIResourceResults = pokemonAPIResourceResults.slice(
+            params.offset,
+            params.offset + params.limit
+          )
+        }
       } else {
-        const response = await apiProvider.request<NamedAPIResourceList>({
-          method: 'get',
-          url: `/pokemon`,
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          params: {
-            ...params,
-            limit: 10000,
-          },
-        })
+        if (!params.search) {
+          console.log(2)
+          console.log(params)
+          const response = await apiProvider.request<NamedAPIResourceList>({
+            method: 'get',
+            url: `/pokemon`,
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            params,
+          })
 
-        responseData = {
-          ...response.data,
-          results: response.data.results
-            .filter(item => item.name.includes(params.name as string))
-            .slice(0, params.limit || defaultListLength)
+          count = response.data.count
+
+          pokemonAPIResourceResults = response.data.results
+        } else {
+          console.log(3)
+          const response = await apiProvider.request<NamedAPIResourceList>({
+            method: 'get',
+            url: `/pokemon`,
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            params: {
+              ...params,
+              limit: 10000,
+            },
+          })
+
+          pokemonAPIResourceResults = response.data.results
+            .filter(item => item.name.includes(params.search as string))
+
+          count = pokemonAPIResourceResults.length
+
+          pokemonAPIResourceResults = pokemonAPIResourceResults.slice(
+            params.offset,
+            params.offset + params.limit
+          )
         }
       }
 
       const pokemonFormResponses = (await Promise.all(
-        responseData.results.map(item => apiProvider.request<IPokemonForm>({
+        pokemonAPIResourceResults.map(result => apiProvider.request<IPokemonForm>({
           method: 'get',
-          url: `/pokemon-form/${item.name}`,
+          url: `/pokemon-form/${result.url.split('/').slice(-2).join('/')}`,
           headers: {
             'Content-Type': 'application/json',
           },
@@ -57,9 +100,61 @@ export const getPokemonList = createAsyncThunk<IPokemonList, IPokemonListParams>
       const pokemonFormResults = pokemonFormResponses.map(result => result.data)
 
       return {
-        ...responseData,
+        count: count,
         results: pokemonFormResults,
       }
+    } catch
+      (err) {
+      return rejectWithValue(err)
+    }
+  }
+)
+
+export const getPokemonTypes = createAsyncThunk<IPokemonType[], undefined>(
+  'pokemon/getTypes',
+  async (_, { rejectWithValue }) => {
+    try {
+      const response = await apiProvider.request<NamedAPIResourceList>({
+        method: 'get',
+        url: `/type`,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        params: {
+          limit: 1000,
+        },
+      })
+
+      const pokemonFormResponses = (await Promise.all(
+        response.data.results.map(item => apiProvider.request<IPokemonType>({
+          method: 'get',
+          url: `/type/${item.name}`,
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }))
+      ))
+
+      return pokemonFormResponses.map(result => result.data)
+    } catch (err) {
+      return rejectWithValue(err)
+    }
+  }
+)
+
+export const getPokemon = createAsyncThunk<IPokemon, number>(
+  'pokemon/getDetails',
+  async (id, { rejectWithValue }) => {
+    try {
+      const response = await apiProvider.request<IPokemon>({
+        method: 'get',
+        url: `/pokemon/${id}`,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+
+      return response.data
     } catch (err) {
       return rejectWithValue(err)
     }

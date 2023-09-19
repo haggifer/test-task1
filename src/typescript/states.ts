@@ -1,8 +1,9 @@
-import { IPokemonForm, IPokemonList } from "./entities";
+import { IPokemon, IPokemonList, IPokemonType } from "./entities";
 
 export interface IPokemonState {
-  listResponse: IPokemonList | null,
-  current: IPokemonForm | null,
+  list: IPokemonList | null,
+  types: IPokemonType[] | null,
+  current: IPokemon | null,
 }
 
 /*---------------------------------------*/

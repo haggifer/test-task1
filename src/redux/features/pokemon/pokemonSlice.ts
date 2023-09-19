@@ -1,9 +1,10 @@
 import { IPokemonState } from "../../../typescript/states";
 import { createSlice } from "@reduxjs/toolkit";
-import { getPokemonList } from "./pokemonThunks";
+import { getPokemon, getPokemonList, getPokemonTypes } from "./pokemonThunks";
 
 const initialState: IPokemonState = {
-  listResponse: null,
+  list: null,
+  types: null,
   current: null,
 }
 
@@ -16,9 +17,25 @@ export const pokemonSlice = createSlice({
       .addCase(getPokemonList.pending, () => {
       })
       .addCase(getPokemonList.fulfilled, (state, { payload }) => {
-        state.listResponse = payload
+        state.list = payload
       })
       .addCase(getPokemonList.rejected, () => {
+      })
+
+      .addCase(getPokemonTypes.pending, () => {
+      })
+      .addCase(getPokemonTypes.fulfilled, (state, { payload }) => {
+        state.types = payload
+      })
+      .addCase(getPokemonTypes.rejected, () => {
+      })
+
+      .addCase(getPokemon.pending, () => {
+      })
+      .addCase(getPokemon.fulfilled, (state, { payload }) => {
+        state.current = payload
+      })
+      .addCase(getPokemon.rejected, () => {
       })
   }
 })

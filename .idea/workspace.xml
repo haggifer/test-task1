@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71d39d3a-41e1-4a1a-a906-02dfacbbb339" name="Changes" comment="">
+    <list default="true" id="38267748-2b49-4906-a48d-5d43f7658777" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/CommonSelect/CommonSelect.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/CommonSelect/CommonSelect.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/ImageFallback/ImageFallback.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/ImageFallback/ImageFallback.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/public/Pokemon/PokemonDetails.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/public/Pokemon/PokemonDetails.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/typescript/common.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/helpers/common.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/helpers/perPageOptions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../finished/uno-to-do/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../finished/uno-to-do/db.json" afterDir="false" />
@@ -125,13 +136,13 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="D:\xampp\php\php.exe" />
-  <component name="ProjectId" id="2VO1dGlFgZp4gRxkBAzmy7Dt54R" />
+  <component name="ProjectId" id="2Va0m6bdMUbjnB0KLpRjsXexPMf" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -141,53 +152,41 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/private/work/notes.txt",
+    "last_opened_file_path": "C:/private/projects/react/unfinished/pokemon-app/src/pages/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "ts.external.directory.path": "C:\\private\\projects\\react\\unfinished\\pokemon-app\\node_modules\\typescript\\lib"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\components\common\DataTable" />
-      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\pages\public\PokemonList\PokemonListTable" />
-      <recent name="C:\private\projects\react\unfinished\pokemon-app" />
-      <recent name="C:\private\projects\react\unfinished\my-app\src\pages\service\NotFound" />
-      <recent name="C:\private\projects\react\unfinished\my-app\src\components\layout\PageLayout" />
+      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\pages\public" />
+      <recent name="C:\private\projects\react\unfinished\my-app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\assets\scss" />
-      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\assets\scss\global" />
-      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\components\common\PageLoader" />
-      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\components\common\DataTable" />
-      <recent name="C:\private\projects\react\unfinished\my-app\src\components\layout\PageLayout" />
+      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\pages\public\Pokemon" />
+      <recent name="C:\private\projects\react\unfinished\pokemon-app\src\pages\public\PokemonList" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="71d39d3a-41e1-4a1a-a906-02dfacbbb339" name="Changes" comment="" />
-      <created>1694692397983</created>
+      <changelist id="38267748-2b49-4906-a48d-5d43f7658777" name="Changes" comment="" />
+      <created>1695059039305</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1694692397983</updated>
-      <workItem from="1694692399069" duration="14878000" />
-      <workItem from="1694720356726" duration="22000" />
-      <workItem from="1694720387706" duration="37294000" />
+      <updated>1695059039305</updated>
+      <workItem from="1695059040609" duration="2429000" />
+      <workItem from="1695063470653" duration="35573000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

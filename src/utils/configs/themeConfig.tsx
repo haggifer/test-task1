@@ -1,17 +1,21 @@
-import { createTheme } from "@mui/material";
+import { createTheme, PaletteColor, PaletteColorOptions } from "@mui/material";
 import { Theme } from "@mui/material/styles";
 
 declare module '@mui/material/styles' {
   interface Theme {
+    palette: Palette,
   }
 
   interface ThemeOptions {
+    palette?: PaletteOptions,
   }
 
   interface Palette {
+    primary: PaletteColor,
   }
 
   interface PaletteOptions {
+    primary?: PaletteColorOptions,
   }
 }
 
@@ -36,5 +40,10 @@ export const getTheme = (): Theme => {
         },
       },
     },
+    palette: {
+      primary: {
+        main: '#143286',
+      }
+    }
   });
 }
