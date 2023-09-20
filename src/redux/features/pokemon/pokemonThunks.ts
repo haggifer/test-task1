@@ -8,7 +8,7 @@ import {
   NamedAPIResource,
   NamedAPIResourceList
 } from "../../../typescript/entities";
-import { apiProvider } from "../../../api/api";
+import { apiProvider, ISerializableError } from "../../../api/api";
 import { RootState } from "../../store";
 
 export const defaultListLength = 12;
@@ -23,7 +23,6 @@ export const getPokemonList = createAsyncThunk<IPokemonList, IPokemonListParams>
       let pokemonAPIResourceResults: NamedAPIResource[] = [];
 
       if (params.type) {
-        console.log(1)
         const state = getState() as RootState
         const targetType = (state.pokemon.types as IPokemonType[]).find(type => type.name === params.type)
 
@@ -47,8 +46,6 @@ export const getPokemonList = createAsyncThunk<IPokemonList, IPokemonListParams>
         }
       } else {
         if (!params.search) {
-          console.log(2)
-          console.log(params)
           const response = await apiProvider.request<NamedAPIResourceList>({
             method: 'get',
             url: `/pokemon`,
@@ -62,7 +59,6 @@ export const getPokemonList = createAsyncThunk<IPokemonList, IPokemonListParams>
 
           pokemonAPIResourceResults = response.data.results
         } else {
-          console.log(3)
           const response = await apiProvider.request<NamedAPIResourceList>({
             method: 'get',
             url: `/pokemon`,
@@ -156,7 +152,7 @@ export const getPokemon = createAsyncThunk<IPokemon, number>(
 
       return response.data
     } catch (err) {
-      return rejectWithValue(err)
+      return rejectWithValue(err as ISerializableError)
     }
   }
 )

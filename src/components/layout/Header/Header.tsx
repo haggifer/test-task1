@@ -9,8 +9,8 @@ export default function Header(): ReactElement {
   const isXs = useMediaQuery(theme.breakpoints.only('xs'))
 
   return (
-    <section className={classes.header_wrapper}>
-      <header className={classes.header}>
+    <header className={classes.header_wrapper}>
+      <Box className={classes.header}>
         <div className={classNames(
           classes.header_content,
           {
@@ -21,7 +21,7 @@ export default function Header(): ReactElement {
             <Logo className={classes.logo}/>
           </Box>
         </div>
-      </header>
-    </section>
+      </Box>
+    </header>
   )
 }

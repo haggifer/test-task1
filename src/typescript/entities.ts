@@ -127,6 +127,7 @@ export interface IPokemonListParams {
   shape?: string;
   sort?: string;
   language?: string;
+
   [key: string]: string | number | undefined,
 }
 

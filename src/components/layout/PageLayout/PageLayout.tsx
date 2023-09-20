@@ -9,11 +9,11 @@ export default function PageLayout(): ReactElement {
     <>
       <Header/>
 
-      <Box className={classes.content_wrapper}>
+      <main className={classes.content_wrapper}>
         <Box className={classes.content}>
           <Outlet/>
         </Box>
-      </Box>
+      </main>
     </>
   );
 }

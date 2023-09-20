@@ -128,7 +128,6 @@ export default function PokemonList(): ReactElement {
       type: type.value,
       limit: limit.value,
     }
-    console.log(newParams)
 
     const newSearchParams = new URLSearchParams(location.search);
 

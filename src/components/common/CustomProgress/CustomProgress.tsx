@@ -18,6 +18,7 @@ export default function CustomProgress({ sx, ...progressProps }: IProps): ReactE
       sx={{
         ...(sx || {})
       }}
+      data-testid="custom-progress"
     >
       <CircularProgress
         {...progressProps}

@@ -25,7 +25,7 @@ export const getTheme = (): Theme => {
     components: {
       MuiButton: {
         styleOverrides: {
-          root: theme => ({
+          root: () => ({
             minHeight: '40px',
             borderRadius: '10px',
             padding: '5px 20px',

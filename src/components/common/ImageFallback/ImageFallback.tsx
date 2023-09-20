@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 import { Box, SxProps } from "@mui/material";
 import classes from "./ImageFallback.module.scss";
 import classNames from "classnames";
-import { ReactComponent as NoImage } from 'assets/images/no-image.svg';
+import { ReactComponent as NoImage } from '../../../assets/images/no-image.svg';
 
 interface IProps {
   className?: string,

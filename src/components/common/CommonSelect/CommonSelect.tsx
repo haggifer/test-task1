@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import Select, { CSSObjectWithLabel, Props as SelectProps } from "react-select";
 import { ISelectOption } from "../../../typescript/common";
-import {StylesProps} from "react-select/dist/declarations/src/styles";
+import { StylesProps } from "react-select/dist/declarations/src/styles";
 import { CSSObject, useTheme } from "@mui/material";
 
 export const defaultNumberSelectOption: ISelectOption<number> = {
