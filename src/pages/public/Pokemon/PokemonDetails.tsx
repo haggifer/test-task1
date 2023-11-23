@@ -46,47 +46,52 @@ export default function PokemonList(): ReactElement {
               downLg && classes.container_mobile,
             )}>
               <Box className={classes.images}>
-                <Box className={classes.images_sm}>
-                  {
-                    currentPokemon.sprites.front_default &&
-                    <img
-                      className={classes.image_sm}
-                      src={currentPokemon.sprites.front_default}
-                      alt="Front Default"
-                    />
-                  }
-                  {
-                    currentPokemon.sprites.back_default &&
-                    <img
-                      className={classes.image_sm}
-                      src={currentPokemon.sprites.back_default}
-                      alt="Back Default"
-                    />
-                  }
-                  {
-                    currentPokemon.sprites.front_shiny &&
-                    <img
-                      className={classes.image_sm}
-                      src={currentPokemon.sprites.front_shiny}
-                      alt="Front Shiny"
-                    />
-                  }
-                  {
-                    currentPokemon.sprites.back_shiny &&
-                    <img
-                      className={classes.image_sm}
-                      src={currentPokemon.sprites.back_shiny}
-                      alt="Back Shiny"
-                    />
-                  }
-                </Box>
                 {
-                  currentPokemon.sprites.other.dream_world.front_default &&
-                  <img
-                    className={classes.image_lg}
-                    src={currentPokemon.sprites.other.dream_world.front_default}
-                    alt="Front Dream World"
-                  />
+                  (currentPokemon.sprites.other.dream_world.front_default || currentPokemon.sprites.front_default) &&
+                  <>
+                    <Box className={classes.images_sm}>
+                      {
+                        currentPokemon.sprites.front_default &&
+                        <img
+                          className={classes.image_sm}
+                          src={currentPokemon.sprites.front_default}
+                          alt="Front Default"
+                        />
+                      }
+                      {
+                        currentPokemon.sprites.back_default &&
+                        <img
+                          className={classes.image_sm}
+                          src={currentPokemon.sprites.back_default}
+                          alt="Back Default"
+                        />
+                      }
+                      {
+                        currentPokemon.sprites.front_shiny &&
+                        <img
+                          className={classes.image_sm}
+                          src={currentPokemon.sprites.front_shiny}
+                          alt="Front Shiny"
+                        />
+                      }
+                      {
+                        currentPokemon.sprites.back_shiny &&
+                        <img
+                          className={classes.image_sm}
+                          src={currentPokemon.sprites.back_shiny}
+                          alt="Back Shiny"
+                        />
+                      }
+                    </Box>
+                    {
+                      <img
+                        className={classes.image_lg}
+                        src={currentPokemon.sprites.other.dream_world.front_default ||
+                          currentPokemon.sprites.front_default}
+                        alt="Front Dream World"
+                      />
+                    }
+                  </>
                 }
               </Box>
               <Box className={classes.data}>

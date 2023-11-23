@@ -72,6 +72,42 @@ export default function PokemonList(): ReactElement {
     ]
   }, [pokemonTypes])
 
+  const [validationSchema] = useState(yup.object({}))
+
+  const {
+    values,
+    handleChange,
+    setFieldValue,
+    setValues,
+  } =
+    useFormik({
+      validationSchema: validationSchema,
+      onSubmit: () => {
+      },
+      initialValues: initFiltersValues,
+      enableReinitialize: true,
+    });
+
+  const debouncedSearchValue = useDebounce<string>(values.search, 400)
+
+  useEffect(() => {
+    if (
+      location.search.includes('limit') &&
+      location.search.includes('offset')
+    ) {
+      handleURLParamsChange()
+    } else {
+      updateUrlParams()
+
+      setOffset(0)
+      setValues(initFiltersValues)
+    }
+  }, [location.search])
+
+  useEffect(() => {
+    updateUrlParams()
+  }, [offset, debouncedSearchValue, values.type, values.limit])
+
   const handlePaginationChange = (event: React.ChangeEvent<unknown>, value: number) => {
     setOffset(values.limit.value * (value - 1))
   }
@@ -88,33 +124,7 @@ export default function PokemonList(): ReactElement {
     setLastURLParamsObject(URLParamsObject)
   }
 
-  useEffect(() => {
-    if (
-      location.search.includes('limit') &&
-      location.search.includes('offset')
-    ) {
-      handleURLParamsChange()
-    }
-  }, [location.search])
-
-  const [validationSchema] = useState(yup.object({}))
-
-  const {
-    values,
-    handleChange,
-    setFieldValue,
-  } =
-    useFormik({
-      validationSchema: validationSchema,
-      onSubmit: () => {
-      },
-      initialValues: initFiltersValues,
-      enableReinitialize: true,
-    });
-
-  const debouncedSearchValue = useDebounce<string>(values.search, 400)
-
-  useEffect(() => {
+  const updateUrlParams = () => {
     const { type, limit } = values
 
     const resetOffset: boolean =
@@ -144,7 +154,7 @@ export default function PokemonList(): ReactElement {
     if (resetOffset) {
       setOffset(0)
     }
-  }, [offset, debouncedSearchValue, values.type, values.limit])
+  }
 
   return (
     <>

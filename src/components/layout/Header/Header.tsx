@@ -3,6 +3,8 @@ import { ReactComponent as Logo } from 'assets/images/logo.svg';
 import classes from './Header.module.scss'
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
+import { defaultPublicPath } from "../../../routing/routes/publicRoutes";
 
 export default function Header(): ReactElement {
   const theme = useTheme()
@@ -18,7 +20,9 @@ export default function Header(): ReactElement {
           }
         )}>
           <Box className={classes.logo_wrapper}>
-            <Logo className={classes.logo}/>
+            <Link to={defaultPublicPath}>
+              <Logo className={classes.logo}/>
+            </Link>
           </Box>
         </div>
       </Box>

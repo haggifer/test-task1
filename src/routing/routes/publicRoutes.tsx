@@ -11,13 +11,8 @@ export const publicRoutes: RouteObject[] = [
     element: (
       <PageLayout/>
     ),
+    path: '/',
     children: [
-      {
-        path: '/',
-        element: (
-          <PokemonList/>
-        ),
-      },
       {
         path: '/pokemon',
         element: (
