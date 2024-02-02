@@ -13,7 +13,7 @@ export default function Header(): ReactElement {
   return (
     <header className={classes.header_wrapper}>
       <Box className={classes.header}>
-        <div className={classNames(
+        <Box className={classNames(
           classes.header_content,
           {
             [classes.header_content_xs]: isXs,
@@ -24,7 +24,7 @@ export default function Header(): ReactElement {
               <Logo className={classes.logo}/>
             </Link>
           </Box>
-        </div>
+        </Box>
       </Box>
     </header>
   )
