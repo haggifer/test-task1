@@ -1,4 +1,4 @@
-import { IPokemonListParams } from "../../typescript/entities";
+import { IPokemonListParams } from '../../typescript/entities';
 
 export const getURLParamsObject = (url: string): IPokemonListParams => {
   const searchParams = new URLSearchParams(url);
@@ -13,5 +13,5 @@ export const getURLParamsObject = (url: string): IPokemonListParams => {
     }
   }
 
-  return paramsObject as IPokemonListParams
-}
+  return paramsObject as IPokemonListParams;
+};

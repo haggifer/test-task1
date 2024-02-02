@@ -1,1 +1,1 @@
-export const defaultThemeMode = 'light'
+export const defaultThemeMode = 'light';

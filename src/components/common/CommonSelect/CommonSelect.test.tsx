@@ -1,8 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import { CommonSelect, defaultStringSelectOption } from './CommonSelect';
-import { ISelectOption } from "../../../typescript/common";
+import { ISelectOption } from '../../../typescript/common';
 
 describe('CommonSelect Component', () => {
   const options: ISelectOption<string>[] = [
@@ -17,7 +16,7 @@ describe('CommonSelect Component', () => {
         value={defaultStringSelectOption}
         onChange={() => {}}
         options={options}
-      />
+      />,
     );
 
     expect(container).toBeInTheDocument();
@@ -36,7 +35,7 @@ describe('CommonSelect Component', () => {
         onChange={() => {}}
         options={options}
         styles={customStyles}
-      />
+      />,
     );
 
     const controlElement = container.querySelector('.react-select__control');

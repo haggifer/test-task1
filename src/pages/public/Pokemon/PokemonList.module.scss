@@ -12,7 +12,6 @@
 }
 
 .search {
-
 }
 
 .progress {
@@ -48,17 +47,18 @@
   border: 2px solid accentColor;
   border-radius: 10px;
   padding: 10px;
-  background: #E1E0FF;
+  background: #e1e0ff;
   transition: 0.2s;
   cursor: pointer;
   text-decoration: none;
 
   &:hover {
-    background: #D8D7FF;
+    background: #d8d7ff;
   }
 }
 
-.list_item_image, .list_item_image_fallback {
+.list_item_image,
+.list_item_image_fallback {
   height: 100px;
 }
 

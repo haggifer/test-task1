@@ -1,8 +1,10 @@
-import { ISelectOption } from "../../typescript/common";
+import { ISelectOption } from '../../typescript/common';
 
-export const generatePerPageOptions = (values: number[]): ISelectOption<number>[] => {
-  return values.map(value => ({
+export const generatePerPageOptions = (
+  values: number[],
+): ISelectOption<number>[] => {
+  return values.map((value) => ({
     label: String(value),
     value,
-  }))
-}
+  }));
+};

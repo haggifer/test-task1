@@ -99,18 +99,18 @@ interface PokemonSprites {
     dream_world: {
       front_default: string;
       front_female: string | null;
-    },
+    };
     home: {
       front_default: string | null;
       front_female: string | null;
       front_shiny: string | null;
       front_shiny_female: string | null;
-    },
+    };
     'official-artwork': {
       front_default: string | null;
       front_shiny: string | null;
-    },
-  }
+    };
+  };
 }
 
 /*---------------------------------------*/
@@ -118,7 +118,7 @@ interface PokemonSprites {
 export interface IPokemonListParams {
   limit: number;
   offset: number;
-  search?: string,
+  search?: string;
   generation?: string;
   type?: string;
   ability?: string;
@@ -128,12 +128,12 @@ export interface IPokemonListParams {
   sort?: string;
   language?: string;
 
-  [key: string]: string | number | undefined,
+  [key: string]: string | number | undefined;
 }
 
 export interface IPokemonList {
-  count: number,
-  results: IPokemonForm[],
+  count: number;
+  results: IPokemonForm[];
 }
 
 /*---------------------------------------*/

@@ -5,34 +5,34 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
-} from "@mui/material";
-import globalClasses from "assets/scss/globalClasses.module.scss";
-import classNames from "classnames";
-import { useFormik } from "formik";
-import React, { ReactElement, useEffect, useMemo, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useDebounce } from "usehooks-ts";
-import * as yup from "yup";
+} from '@mui/material';
+import globalClasses from 'assets/scss/globalClasses.module.scss';
+import classNames from 'classnames';
+import { useFormik } from 'formik';
+import React, { ReactElement, useEffect, useMemo, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useDebounce } from 'usehooks-ts';
+import * as yup from 'yup';
 import {
   CommonSelect,
   defaultStringSelectOption,
-} from "../../../components/common/CommonSelect/CommonSelect";
-import CustomProgress from "../../../components/common/CustomProgress/CustomProgress";
-import ImageFallback from "../../../components/common/ImageFallback/ImageFallback";
+} from '../../../components/common/CommonSelect/CommonSelect';
+import CustomProgress from '../../../components/common/CustomProgress/CustomProgress';
+import ImageFallback from '../../../components/common/ImageFallback/ImageFallback';
 import {
   defaultListLength,
   getPokemonList,
-} from "../../../redux/features/pokemon/pokemonThunks";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+} from '../../../redux/features/pokemon/pokemonThunks';
+import { useAppDispatch, useAppSelector } from '../../../redux/hooks';
 import {
   selectPokemonList,
   selectPokemonTypes,
-} from "../../../redux/selectors/pokemon";
-import { ISelectOption } from "../../../typescript/common";
-import { IPokemonListParams } from "../../../typescript/entities";
-import { getURLParamsObject } from "../../../utils/helpers/common";
-import { generatePerPageOptions } from "../../../utils/helpers/perPageOptions";
-import classes from "./PokemonList.module.scss";
+} from '../../../redux/selectors/pokemon';
+import { ISelectOption } from '../../../typescript/common';
+import { IPokemonListParams } from '../../../typescript/entities';
+import { getURLParamsObject } from '../../../utils/helpers/common';
+import { generatePerPageOptions } from '../../../utils/helpers/perPageOptions';
+import classes from './PokemonList.module.scss';
 
 // Each key is associated with URL parameter
 interface IFiltersValues {
@@ -55,10 +55,10 @@ export default function PokemonList(): ReactElement {
   const pokemonTypes = useAppSelector(selectPokemonTypes);
 
   const theme = useTheme();
-  const isXs = useMediaQuery(theme.breakpoints.only("xs"));
-  const isSm = useMediaQuery(theme.breakpoints.only("sm"));
-  const isMd = useMediaQuery(theme.breakpoints.only("md"));
-  const upLg = useMediaQuery(theme.breakpoints.up("lg"));
+  const isXs = useMediaQuery(theme.breakpoints.only('xs'));
+  const isSm = useMediaQuery(theme.breakpoints.only('sm'));
+  const isMd = useMediaQuery(theme.breakpoints.only('md'));
+  const upLg = useMediaQuery(theme.breakpoints.up('lg'));
 
   const [lastURLParamsObject, setLastURLParamsObject] =
     useState<IPokemonListParams>(defaultURLParamsObject);
@@ -66,13 +66,13 @@ export default function PokemonList(): ReactElement {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const [perPageOptions] = useState<ISelectOption<number>[]>(
-    generatePerPageOptions([12, 24, 48])
+    generatePerPageOptions([12, 24, 48]),
   );
 
   const [offset, setOffset] = useState<number>(0);
 
   const [initFiltersValues] = useState<IFiltersValues>({
-    search: "",
+    search: '',
     type: defaultStringSelectOption,
     limit: perPageOptions[0],
   });
@@ -104,8 +104,8 @@ export default function PokemonList(): ReactElement {
 
   useEffect(() => {
     if (
-      location.search.includes("limit") &&
-      location.search.includes("offset")
+      location.search.includes('limit') &&
+      location.search.includes('offset')
     ) {
       handleURLParamsChange();
     } else {
@@ -122,7 +122,7 @@ export default function PokemonList(): ReactElement {
 
   const handlePaginationChange = (
     event: React.ChangeEvent<unknown>,
-    value: number
+    value: number,
   ) => {
     setOffset(values.limit.value * (value - 1));
   };
@@ -157,7 +157,7 @@ export default function PokemonList(): ReactElement {
     const newSearchParams = new URLSearchParams(location.search);
 
     Object.entries(newParams).forEach((entry) => {
-      if (!entry[1] && entry[0] !== "offset") {
+      if (!entry[1] && entry[0] !== 'offset') {
         newSearchParams.delete(entry[0]);
       } else {
         newSearchParams.set(entry[0], String(entry[1]));
@@ -198,17 +198,17 @@ export default function PokemonList(): ReactElement {
         <CommonSelect<string, false>
           name="type"
           value={values.type}
-          onChange={(newValue) => setFieldValue("type", newValue)}
+          onChange={(newValue) => setFieldValue('type', newValue)}
           options={typeOptions}
           styles={{
             control: {
-              minHeight: "56px",
+              minHeight: '56px',
             },
             singleValue: {
-              textTransform: "capitalize",
+              textTransform: 'capitalize',
             },
             option: {
-              textTransform: "capitalize",
+              textTransform: 'capitalize',
             },
           }}
         />
@@ -268,11 +268,11 @@ export default function PokemonList(): ReactElement {
             <CommonSelect<number, false>
               name="limit"
               value={values.limit}
-              onChange={(newValue) => setFieldValue("limit", newValue)}
+              onChange={(newValue) => setFieldValue('limit', newValue)}
               options={perPageOptions}
               styles={{
                 control: {
-                  minHeight: "40px",
+                  minHeight: '40px',
                 },
               }}
             />
