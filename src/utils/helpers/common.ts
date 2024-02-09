@@ -1,3 +1,4 @@
+import { ISelectOption } from 'typescript/common';
 import { IPokemonListParams } from '../../typescript/entities';
 
 export const getURLParamsObject = (url: string): IPokemonListParams => {
@@ -14,4 +15,13 @@ export const getURLParamsObject = (url: string): IPokemonListParams => {
   }
 
   return paramsObject as IPokemonListParams;
+};
+
+export const generatePerPageOptions = (
+  values: number[],
+): ISelectOption<number>[] => {
+  return values.map((value) => ({
+    label: String(value),
+    value,
+  }));
 };

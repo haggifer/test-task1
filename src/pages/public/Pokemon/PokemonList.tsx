@@ -31,7 +31,7 @@ import {
 import { ISelectOption } from '../../../typescript/common';
 import { IPokemonListParams } from '../../../typescript/entities';
 import { getURLParamsObject } from '../../../utils/helpers/common';
-import { generatePerPageOptions } from '../../../utils/helpers/perPageOptions';
+import { generatePerPageOptions } from '../../../utils/helpers/common';
 import classes from './PokemonList.module.scss';
 
 // Each key is associated with URL parameter
