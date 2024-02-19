@@ -1,4 +1,4 @@
-import { ISelectOption } from 'typescript/common';
+import { ISelectOption } from 'components/common/CommonSelect/CommonSelect';
 import { IPokemonListParams } from '../../typescript/entities';
 
 export const getURLParamsObject = (url: string): IPokemonListParams => {

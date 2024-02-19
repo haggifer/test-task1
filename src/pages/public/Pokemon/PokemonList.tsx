@@ -16,6 +16,7 @@ import * as yup from 'yup';
 import {
   CommonSelect,
   defaultStringSelectOption,
+  ISelectOption,
 } from '../../../components/common/CommonSelect/CommonSelect';
 import CustomProgress from '../../../components/common/CustomProgress/CustomProgress';
 import ImageFallback from '../../../components/common/ImageFallback/ImageFallback';
@@ -28,7 +29,6 @@ import {
   selectPokemonList,
   selectPokemonTypes,
 } from '../../../redux/selectors/pokemon';
-import { ISelectOption } from '../../../typescript/common';
 import { IPokemonListParams } from '../../../typescript/entities';
 import { getURLParamsObject } from '../../../utils/helpers/common';
 import { generatePerPageOptions } from '../../../utils/helpers/common';

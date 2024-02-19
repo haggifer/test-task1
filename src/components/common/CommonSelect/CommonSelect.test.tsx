@@ -1,7 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { CommonSelect, defaultStringSelectOption } from './CommonSelect';
-import { ISelectOption } from '../../../typescript/common';
+import {
+  CommonSelect,
+  defaultStringSelectOption,
+  ISelectOption,
+} from './CommonSelect';
 
 describe('CommonSelect Component', () => {
   const options: ISelectOption<string>[] = [
